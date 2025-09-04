@@ -1,0 +1,19 @@
+# PHPStan configuration for the Get Protocol WordPress plugin
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+    level: 7
+    paths:
+        - includes
+        - src
+    autoload_files:
+        - %currentWorkingDirectory%/vendor/autoload.php
+    ignoreErrors:
+        - '#Call to an undefined method [a-zA-Z0-9_]+::[a-zA-Z0-9_]+\(\)#'
+    excludePaths:
+        analyse:
+            - %currentWorkingDirectory%/vendor
+            - %currentWorkingDirectory%/node_modules
+            - %currentWorkingDirectory%/build
+            - %currentWorkingDirectory%/tests

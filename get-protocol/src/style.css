@@ -1,0 +1,17 @@
+/* Styles for GET Protocol Admin UI */
+
+.admin-app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.admin-app h1 {
+  color: #333;
+}
+
+.admin-app p {
+  color: #666;
+}
