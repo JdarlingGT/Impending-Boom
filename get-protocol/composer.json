@@ -1,19 +1,12 @@
 {
-    "name": "get-protocol",
+    "name": "jdarling-gt/get-protocol",
     "description": "A WordPress plugin for GET Protocol, integrating training & events, MCP bridge, and publishing/social syndication.",
     "type": "wordpress-plugin",
     "homepage": "https://github.com/your-repo/get-protocol",
     "license": "GPL-2.0-or-later",
     "author": "Your Name (https://yourwebsite.com)",
     "require": {
-        "firebase/php-jwt": "^6.11",
-        "acf-pro": "*",
-        "woocommerce/woocommerce": "*",
-        "learndash/learndash": "*",
-        "fluentcrm/fluentcrm": "*",
-        "wp-fusion/wp-fusion": "*",
-        "gravityforms/gravityforms": "*",
-        "uncanny-automator/uncanny-automator": "*"
+        "firebase/php-jwt": "^6.11"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0",
@@ -24,14 +17,14 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
-    "autoload": {
+        "autoload": {
         "psr-4": {
-            "GetProtocol\\": "includes/"
+            "Automattic\\WordpressMcp\\": "includes/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "GetProtocol\\Tests\\": "tests/phpunit/"
+            "Automattic\\WordpressMcp\\Tests\\": "tests/phpunit/"
         }
     }
 }
